@@ -21,10 +21,22 @@ document.getElementById("count").innerHTML = "140";
 		var longitud = document.getElementById("textArea").value.length;
 		var contador =  document.getElementById("count")
         contador.innerText = limite-longitud;
-        if( longitud == 0 ){
-        	button.disabled = true;
-        }
+	        if( longitud == 0 ){
+	        	 button.disabled = true;
+	        }else if(longitud>limite){
+	        	 button.disabled = true;
+	        }else if(longitud>120){
+	             contador.classList.add("turquesa");
+	        }else{
+	        	 contador.classList.remote("turquesa");
+	        
+	        }if(longitud>130){
+	             contador.classList.add("rojo");
+	        }
+	        else{
+	        	 contador.classList.remote("rojo");
+	        }
+		});
 	});
-});
 
 
