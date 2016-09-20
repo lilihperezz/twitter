@@ -1,6 +1,9 @@
 *{
 	box-sizing: border-box;
 	}
+	body{
+		text-align: center;
+	}
  h1{
 	font-size: 2em;
 	padding-bottom: 1%;
