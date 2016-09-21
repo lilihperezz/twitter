@@ -15,7 +15,7 @@
 #textArea{
 	 border-radius: 3%;
 	 overflow: hidden;
-
+	 resize: none;
 }
 .turquesa{
 	color:#2E9AFE;

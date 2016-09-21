@@ -19,6 +19,7 @@ document.getElementById("count").innerHTML = "140";
 		button.disabled = false;
 		var tecla = e.keyCode;
 		expandirTextArea (tecla);
+		validarContenedor(textArea);
 		var limite = 140;
 		var longitud = document.getElementById("textArea").value.length;
 		var contador =  document.getElementById("count")
@@ -48,6 +49,12 @@ document.getElementById("count").innerHTML = "140";
          	 textArea.rows -= 1; 
          }if(textArea.rows < 5){
          	 textArea.rows = 4;
+         }
+    }
+    function validarContenedor(textArea){
+      var textArea= document.getElementById("textArea");
+      if ( textArea.value.length > textArea.rows * textArea.cols){
+      		textArea.rows += 1; 
          }
     }
 });
