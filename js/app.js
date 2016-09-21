@@ -43,9 +43,9 @@ document.getElementById("count").innerHTML = "140";
     function expandirTextArea(tecla) {
 	     var textArea= document.getElementById("textArea");
          if (tecla == 13) { 	
-       	     textArea.rows +=1;     
+       	     textArea.rows += 1;     
          }else if(tecla == 8){
-         	 textArea.rows -=1; 
+         	 textArea.rows -= 1; 
          }if(textArea.rows < 5){
          	 textArea.rows = 4;
          }
