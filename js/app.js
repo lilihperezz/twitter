@@ -15,8 +15,10 @@ document.getElementById("count").innerHTML = "140";
          myFunction();
 	});    
 
-	textArea.addEventListener("keyup",function(){
+	textArea.addEventListener("keyup",function(e){
 		button.disabled = false;
+		var tecla = e.keyCode;
+		expandirTextArea (tecla);
 		var limite = 140;
 		var longitud = document.getElementById("textArea").value.length;
 		var contador =  document.getElementById("count")
@@ -28,15 +30,29 @@ document.getElementById("count").innerHTML = "140";
 	        }else if(longitud>120){
 	             contador.classList.add("turquesa");
 	        }else{
-	        	 contador.classList.remote("turquesa");
+	        	 contador.classList.remove("turquesa");
 	        
 	        }if(longitud>130){
 	             contador.classList.add("rojo");
 	        }
 	        else{
-	        	 contador.classList.remote("rojo");
+	        	 contador.classList.remove("rojo");
 	        }
 		});
-	});
+	
+    function expandirTextArea(tecla) {
+	     var textArea= document.getElementById("textArea");
+         if (tecla == 13) { 	
+       	     textArea.rows +=1;     
+         }else if(tecla == 8){
+         	 textArea.rows -=1; 
+         }if(textArea.rows < 5){
+         	 textArea.rows = 4;
+         }
+    }
+});
 
 
+
+    
+  

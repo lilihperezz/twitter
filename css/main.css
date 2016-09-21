@@ -1,3 +1,4 @@
+
 *{
 	box-sizing: border-box;
 	}
@@ -13,7 +14,8 @@
 }
 #textArea{
 	 border-radius: 3%;
-	 padding:4% 1%; 
+	 overflow: hidden;
+
 }
 .turquesa{
 	color:#2E9AFE;
