@@ -11,7 +11,8 @@ document.getElementById("count").innerHTML = "140";
          newItem.appendChild(textnode);
          var resultado = document.getElementById("resultado");
          resultado.insertBefore(newItem,resultado.childNodes[0]);
-            var fecha = new Date();
+         
+         var fecha = new Date();
          var hora = fecha.getHours();
          var min = fecha.getMinutes();
          var contenedorHora = document.createElement("span");
@@ -65,7 +66,6 @@ document.getElementById("count").innerHTML = "140";
       		 textArea.rows += 1; 
          }
     }
-
 });
 
 
