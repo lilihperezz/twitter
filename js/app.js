@@ -11,7 +11,14 @@ document.getElementById("count").innerHTML = "140";
          newItem.appendChild(textnode);
          var resultado = document.getElementById("resultado");
          resultado.insertBefore(newItem,resultado.childNodes[0]);
+            var fecha = new Date();
+         var hora = fecha.getHours();
+         var min = fecha.getMinutes();
+         var contenedorHora = document.createElement("span");
+         contenedorHora.innerText = hora + ":" + min;
+         newItem.insertBefore(contenedorHora,newItem.childNodes[0]);
         }
+      
          myFunction();
 	});    
 
@@ -51,12 +58,14 @@ document.getElementById("count").innerHTML = "140";
          	 textArea.rows = 4;
          }
     }
+
     function validarContenedor(textArea){
-      var textArea= document.getElementById("textArea");
-      if ( textArea.value.length > textArea.rows * textArea.cols){
-      		textArea.rows += 1; 
+         var textArea= document.getElementById("textArea");
+         if ( textArea.value.length > textArea.rows * textArea.cols){
+      		 textArea.rows += 1; 
          }
     }
+
 });
 
 
