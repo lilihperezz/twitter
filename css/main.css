@@ -2,24 +2,60 @@
 *{
 	box-sizing: border-box;
 	}
-	body{
-		text-align: center;
+
+body{
+	text-align: center;
+	background-image: url(../img/apps.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	}
+
  h1{
-	font-size: 2em;
+	font-size: 3em;
 	padding-bottom: 1%;
 	padding-top: 4%;
 	font-family:Open Sans;
-
+	color:red;
 }
+
+p{
+	color:#FE9A2E;
+	font-weight :bold;
+}
+
 #textArea{
+	 background-color: #D8D8D8;
 	 border-radius: 3%;
 	 overflow: hidden;
 	 resize: none;
+	 color: #0000FF;
 }
+
 .turquesa{
 	color:#2E9AFE;
 }
+
 .rojo{
 	color:#FE2E64;
+}
+
+#resultado div{
+	background-color: #A9D0F5;
+	word-wrap: break-word;
+	width: 30%;
+	margin-top: 2% ;
+	color: #585858;
+	font-size: 2em;
+	border-radius:5px;
+}
+
+#calcular{
+	background-color: #56A540;
+	padding: 8px 13px;
+	border-radius:3px;
+	border:none;
+	border-bottom: 1px solid #088A08 ;
+	color:white;
+	font-weight :bold;
+	font-size: 15px;
 }

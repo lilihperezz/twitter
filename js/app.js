@@ -4,9 +4,10 @@ document.getElementById("count").innerHTML = "140";
    button.addEventListener("click", function(e) { 
        e.preventDefault(); 
 
+
 	function myFunction() {
 	     var textArea= document.getElementById("textArea").value;
-         var newItem = document.createElement("p");
+         var newItem = document.createElement("div");
          var textnode = document.createTextNode("Tweet: "+ textArea );
          newItem.appendChild(textnode);
          var resultado = document.getElementById("resultado");
@@ -15,12 +16,15 @@ document.getElementById("count").innerHTML = "140";
          var fecha = new Date();
          var hora = fecha.getHours();
          var min = fecha.getMinutes();
+         	if(min<10){
+         		min = "0" + min;
+         	}
          var contenedorHora = document.createElement("span");
-         contenedorHora.innerText = hora + ":" + min;
+         contenedorHora.innerText = hora + ":" + min + " ";
          newItem.insertBefore(contenedorHora,newItem.childNodes[0]);
         }
-      
-         myFunction();
+      	 myFunction();
+         textArea.value="";
 	});    
 
 	textArea.addEventListener("keyup",function(e){
@@ -67,8 +71,3 @@ document.getElementById("count").innerHTML = "140";
          }
     }
 });
-
-
-
-    
-  
