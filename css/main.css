@@ -11,16 +11,18 @@ body{
 	}
 
  h1{
-	font-size: 3em;
-	padding-bottom: 1%;
-	padding-top: 4%;
-	font-family:Open Sans;
+	font-size: 6em;
+	margin-bottom: 2%;
+	margin-top: : 3%;
+	font-family:garamond;
 	color:red;
+	font-weight: bold;
 }
 
 p{
 	color:#FE9A2E;
 	font-weight :bold;
+	font-size: 1.5em;
 }
 
 #textArea{
@@ -29,6 +31,8 @@ p{
 	 overflow: hidden;
 	 resize: none;
 	 color: #0000FF;
+	 font-size: 1.3em;
+	 font-weight: bold;
 }
 
 .turquesa{
